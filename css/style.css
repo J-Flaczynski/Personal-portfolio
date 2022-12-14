@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 400vh;
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#panel-1 {
+  background-color: pink;
+  height: 100vh;
+}
+#panel-2 {
+  background-color: #e8e8e8;
+}
+#panel-3 {
+  background-color: red;
+}
+#panel-4 {
+  background-color: pink;
+}
+footer {
+  background-color: #3b3b3b;
+  width: 100%;
+  height: 90px;
+  align-self: flex-end;
+}
