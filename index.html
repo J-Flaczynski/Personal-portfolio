@@ -8,20 +8,40 @@
     <title>Jakub Flaczynski</title>
   </head>
   <body>
-    <nav></nav>
+    <nav>
+      <img class="logo" src="/img/logo.png" width="90px" height="auto" alt="White circle with letter F in it">
+      <ul>
+        <li><a onclick="goHome()">Home</a></li>
+        <li><a onclick="goAbout()">About me</a></li>
+        <li><a onclick="goHobbies()">Hobbies</a></li>
+        <li><a onclick="goProjects()">Projects</a></li>
+        <li><a onclick="goContact()">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-      <div id="panel-4" onwheel="scrollToFiveUp()" class="panel">Section 4</div>
-      <div id="panel-3" onwheel="scrollToFourUp()" class="panel">Section 3</div>
-      <div id="panel-2" onwheel="scrollToThreeUp()" class="panel">
-        Section 2
+      <div id="home" onwheel="home()" class="panel">
+        <div class="welcome">
+          <h1>Jakub Flaczynski</h1>
+          <p>Software development student at ROC Nijmegen</p>
+          <div class="welcome-buttons">
+            <div class="button">
+              <p>Curriculum vitae</p>
+            </div>
+            <div class="button" onclick="goAbout()"><p>About me</p></div>
+            </div>
+          </div>
+        </div>
+        <div id="about" onwheel="about()" class="panel">
+          Section 3
+        </div>
+        <div id="hobbies" onwheel="hobbies()" class="panel">
+          Section 2
+        </div>
+        <div id="projects" onwheel="projects()" class="panel"></div>
+        <div id="contact" onwheel="contact()" class="panel"></div>
+        <footer id="footer"></footer>
       </div>
-      <div id="panel-1" onwheel="scrollToTwoUp()" class="panel">
-        
-      <footer>
-      </footer>
-    </div>
-    </div>
-    <script src="/js/script.js"></script>
+      <script src="/js/script.js"></script>
     </main>
   </body>
 </html>

@@ -1,38 +1,75 @@
-// Scroll logic, when you scroll up or down you go to a new panel.
-function scrollToTwoUp() {
+// Scroll logic, when you scroll up or down you go to a new panel smoothly
+function home() {
   if (event.deltaY < 0) {
-    document.querySelector("#panel-2").scrollIntoView({
+  } else {
+    document.querySelector("#about").scrollIntoView({
       behavior: "smooth",
     });
   }
 }
-function scrollToThreeUp() {
+function about() {
   if (event.deltaY < 0) {
-    document.querySelector("#panel-3").scrollIntoView({
+    document.querySelector("#home").scrollIntoView({
       behavior: "smooth",
     });
   } else {
-    document.querySelector("#panel-1").scrollIntoView({
+    document.querySelector("#hobbies").scrollIntoView({
       behavior: "smooth",
     });
   }
 }
-function scrollToFourUp() {
+function hobbies() {
   if (event.deltaY < 0) {
-    document.querySelector("#panel-4").scrollIntoView({
+    document.querySelector("#about").scrollIntoView({
       behavior: "smooth",
     });
   } else {
-    document.querySelector("#panel-2").scrollIntoView({
+    document.querySelector("#projects").scrollIntoView({
       behavior: "smooth",
     });
   }
 }
-function scrollToFiveUp() {
+function projects() {
   if (event.deltaY < 0) {
+    document.querySelector("#hobbies").scrollIntoView({
+      behavior: "smooth",
+    });
   } else {
-    document.querySelector("#panel-3").scrollIntoView({
+    document.querySelector("footer").scrollIntoView({
       behavior: "smooth",
     });
   }
+}
+function contact() {
+  if (event.deltaY < 0) {
+    document.querySelector("#projects").scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+}
+// Smooth transitioning to another page
+function goHome() {
+  document.querySelector("#home").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function goAbout() {
+  document.querySelector("#about").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function goHobbies() {
+  document.querySelector("#hobbies").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function goProjects() {
+  document.querySelector("#projects").scrollIntoView({
+    behavior: "smooth",
+  });
+}
+function goContact() {
+  document.querySelector("footer").scrollIntoView({
+    behavior: "smooth",
+  });
 }

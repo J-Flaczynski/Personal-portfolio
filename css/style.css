@@ -1,7 +1,29 @@
 body {
   margin: 0;
   padding: 0;
-  height: 400vh;
+  height: 500vh;
+}
+nav {
+  position: fixed;
+  display: flex;
+  background-color: #3b3b3b;
+  width: 100%;
+  height: 10vh;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+nav li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: large;
+  display: inline;
+  text-decoration: none;
+}
+nav a {
+  color: inherit;
+}
+nav a:link {
+  text-decoration: none;
 }
 
 .panel {
@@ -12,22 +34,54 @@ body {
   align-items: center;
 }
 
-#panel-1 {
+#contact {
   background-color: pink;
   height: 100vh;
 }
-#panel-2 {
+#projects {
   background-color: #e8e8e8;
 }
-#panel-3 {
+#hobbies {
   background-color: red;
 }
-#panel-4 {
+#about {
   background-color: pink;
+}
+#projects {
+  background-color: blue;
 }
 footer {
   background-color: #3b3b3b;
   width: 100%;
   height: 90px;
   align-self: flex-end;
+}
+.welcome {
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+.welcome-buttons {
+  display: flex;
+  width: 500px;
+  height: 50x;
+  gap: 22%;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(223, 215, 215);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.button:hover {
+  transition-duration: 1.3s;
+  background-color: black;
+  color: white;
+}
+.button:active {
+  transform: scale(1.5);
 }
