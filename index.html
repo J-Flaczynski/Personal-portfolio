@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <title>Jakub Flaczynski</title>
   </head>
   <body>
     <nav>
-      <img class="logo" src="/img/logo.png" width="90px" height="auto" alt="White circle with letter F in it">
-      <ul>
+      <img  class="logo" src="/img/logo.png" width="90px" height="auto" onclick="goHome()" alt="White circle with letter F in it">
+      <ul>  
         <li><a onclick="goHome()">Home</a></li>
         <li><a onclick="goAbout()">About me</a></li>
         <li><a onclick="goHobbies()">Hobbies</a></li>
@@ -32,7 +33,21 @@
           </div>
         </div>
         <div id="about" onwheel="about()" class="panel">
-          Section 3
+        <div class="about-text">
+          <h1>Hello and welcome to my portfolio website!</h1>
+          <p>My name is Jakub and I am a software development student with a passion for creating functional and visually appealing websites.<br> I specialize in HTML and CSS, and have also gained experience with programming languages such as Java and Python.<br> I am proficient in using version control with Git and have a strong understanding of operating systems, particularly Linux.<br>
+            Throughout my studies and personal projects, I have consistently demonstrated my ability to learn and adapt to new technologies, as well as my attention to detail and problem-solving skills. <br>I am excited to continue developing my skills and contribute to meaningful projects as a software developer.<br><br> Thank you for visiting my website and consider hiring me.</p>
+        </div>
+          <div class="languages">
+            <img src="img/htmllogo.png" alt="css logo" width="100px"></div>
+            <div class="languages">
+              <img src="img/csslogo.png" alt="css logo" width="100px"></div>
+              <div class="languages">
+                <img src="img/jslogo.png" alt="css logo" width="250px"></div>
+                <div class="languages">
+                  <img src="img/java.png" alt="css logo" width="90px"></div>
+                  <div class="languages">
+                    <img src="img/Pythonlogo.png" alt="css logo" width="150px"></div>
         </div>
         <div id="hobbies" onwheel="hobbies()" class="panel">
           Section 2
